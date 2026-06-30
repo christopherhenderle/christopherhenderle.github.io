@@ -20,6 +20,22 @@
     });
   }
 
+  function wireDiligenceToggle() {
+    var toggle = document.getElementById('diligenceToggle');
+    var panel = document.getElementById('diligencePanel');
+    var close = document.getElementById('diligenceClose');
+    if (!toggle || !panel || !close) return;
+    toggle.addEventListener('click', function () {
+      var isOpen = !panel.hidden;
+      panel.hidden = isOpen;
+      toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    });
+    close.addEventListener('click', function () {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   function loadPartial(targetId, url, afterInsert) {
     var target = document.getElementById(targetId);
     if (!target) return;
@@ -43,6 +59,8 @@
       wireMobileToggle();
       markCurrentNav();
     });
-    loadPartial('site-footer', '/partials/footer.html');
+    loadPartial('site-footer', '/partials/footer.html', function () {
+      wireDiligenceToggle();
+    });
   });
 })();
