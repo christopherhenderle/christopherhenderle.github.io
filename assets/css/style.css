@@ -295,3 +295,68 @@ h3 {
   background: #fff;
   color: #222;
 }
+
+/* ---------- diligence toggle & panel ---------- */
+
+.diligence-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  color: #888;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.diligence-toggle:hover {
+  color: #444;
+}
+
+.diligence-panel {
+  width: 100%;
+  margin-top: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px 24px;
+  position: relative;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.diligence-panel[hidden] {
+  display: none;
+}
+
+.diligence-inner h4 {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+}
+
+.diligence-inner p {
+  margin: 0 0 10px;
+  color: #444;
+}
+
+.diligence-inner p:last-child {
+  margin-bottom: 0;
+}
+
+.diligence-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+  line-height: 1;
+  padding: 0;
+}
+
+.diligence-close:hover {
+  color: #222;
+}
