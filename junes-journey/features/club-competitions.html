@@ -24,15 +24,34 @@
         <div class="block">
           <span class="block-label">OVERVIEW</span>
           <img src="/assets/images/junes-journey/features/club-competitions.jpg" alt="Club Competitions">
-          <p>[PLACEHOLDER: Initial overview text — what this feature is, where it
-             sits in the game, why it exists.]</p>
+          <p>Club Competitions was an extensive feature that integrated with our already released Club feature and the subsequent Leagues feature. This breakdown will cover only the meta considerations and screen flows for the competitions. See <a href="/junes-journey/features/spot-the-difference-time-rush.html">Spot the Difference &amp; Time Rush</a> for details on the game modes.</p>
         </div>
 
         <div class="block">
           <span class="block-label">FEATURE BREAKDOWN</span>
           <h2>Feature Breakdown</h2>
-          <p>[PLACEHOLDER: Detailed breakdown of your work on this feature — design
-             decisions, live ops process, data/KPI involvement, outcomes.]</p>
+          <p>When the larger "Club" feature was being broken up, I was interested in taking on Club Competitions and ended up receiving the assignment.</p>
+          <p>Our lead had an already established vision of the feature's social goals, that being a high friction, high intensity, high coordination event. This was meant to drive a high degree of interaction between club mates in order to help create and strengthen social bonds.</p>
+          <p>Club Competitions were important to the JJ economy as both a sink of energy and a source of rewards. With the introduction of serving drinks in clubs, players were getting excess energy than usual. To balance out this additional energy, Club Competitions had to use the same energy they use for progression in the main game.</p>
+          <p>Reward balancing was also important, since the player could spend their energy on main progression, but we wanted to make competition participation more attractive. One of the most desirable rewards from Club Competitions are compasses, which are required for expanding your base.</p>
+          <p>One area of contention was the time window. Originally, we wanted the event to become active for every member of the club at once, using the Club's Meeting Time as the anchor point. To address concerns from product, I created a participation window around the Club Meeting Time. It would still be optimal for club members to all begin playing together, around their meeting time, but players now had the freedom to participate anytime within a larger time window.</p>
+          <p>Developing the scheduling of Club Competitions on the back end was the most technical aspect from my perspective. Previous timed events had simple start and end times. Now it was important to show a preview of an upcoming event. Then, the "start/end" times defined WHEN the player could start their competition. We also needed to define how long the player could participate, separately from the start/end times.</p>
+          <p>Additional, beyond just the time window for when players in any particular club could start their competition, there was the umbrella time window for the entire event. This would need to encompass the meeting time for each club, along with the time window to start the competition for players.</p>
+          <p>Events were set up through datasheets the same way as every other feature, but once events were active, they could be adjusted through a new webtool we built.</p>
+          <p>Another big challenge was conveying so much information to players. Originally, the results screen featured player progression for both the hidden object scene (this is gone into detail more in the <a href="/junes-journey/features/spot-the-difference-time-rush.html">Spot the Difference &amp; Time Rush</a> section) and the overall competition standing.</p>
+          <p>After initial demos, it became apparent that too much was being updated on screen at once, so I worked with our UI artist to split the results screen into two separate screens.</p>
+          <p>The results would focus on progression through the hidden object scene, points earned, and getting the player to play another round.</p>
+          <p>Overall standing was visually updated once the player returned to the competition landing page.</p>
+          <p>We anticipated this would be a common user flow, anticipating players would regularly go back to the Club's Cafe to get more energy and discuss scene strategy.</p>
+          <p>As we wanted to release competitions before the holidays, it wasn't released with full matchmaking. As designed, it was meant to bucket players by their club's meeting time, and then by the performance of individual club members.</p>
+          <p>Due to the limited time nature of the event, Club Competitions needed to be highly visible from the Island screen. Notifications breadcrumb the player through the Club and a dedicated timed Club Competition button will appear and link directly to the competition landing screen.</p>
+          <p>Competitions do start locked but can be unlocked by player by reaching the appropriate level. This was mainly to control the pace of new features being introduced to players and to make sure that engaging players are already engaged with the game.</p>
+          <p>Due the staggered nature of events, I also built in participation safeguards by restricting participation to only players that were club members at the start of the event.</p>
+          <p>Players that couldn't directly engage in the competition could still support their club, though, by sharing drinks in the Cafe.</p>
+          <p>Early performance of the feature was very promising. After each event, I would review the results with our data team and our economy designer. One of our biggest concerns was the impact on the game's economy, so I particularly called out the need to review the total value of resources spent by players on the event and the total value of rewards given out.</p>
+          <p>Overall, resources spent were greater than resources awarded, but it was possible for low engagement players to earn rewards much more valuable than the energy spent. For the time, this wasn't a concern, since there was the benefit of driving engagement among lower engagement players. Proper matchmaking would improve this even more.</p>
+          <p>In association with live ops, I continued to configure and schedule new events. Early on we experimented with a variety of different balances as far as reward value, energy cost per round, and length of the player's play time, and the size of the engagement window.</p>
+          <p>Eventually we aligned on about an hour of play time with around a 12 hour engagement window.</p>
         </div>
 
         <div class="block">
