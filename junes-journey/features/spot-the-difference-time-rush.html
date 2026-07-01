@@ -22,27 +22,20 @@
       <section class="container">
 
         <div class="block">
-          <span class="block-label">OVERVIEW</span>
           <img src="/assets/images/junes-journey/features/spot-the-difference-time-rush.jpg" alt="Spot the Difference & Time Rush">
-          <p>[PLACEHOLDER: Initial overview text — what this feature is, where it
-             sits in the game, why it exists.]</p>
+          <p>Two new game modes were released alongside the <a href="/junes-journey/features/club-competitions.html">Club Competition</a> feature. Work on these modes came at a challenging time when I was diagnosed with cancer and had to undergo surgery. To keep the project on track, I handed off balancing and implementation work to Niek Tuerlings. After two weeks of recovery, I was back in the office to wrap the feature up!</p>
         </div>
 
         <div class="block">
-          <span class="block-label">FEATURE BREAKDOWN</span>
           <h2>Feature Breakdown</h2>
-          <p>[PLACEHOLDER: Detailed breakdown of your work on this feature — design
-             decisions, live ops process, data/KPI involvement, outcomes.]</p>
-        </div>
-
-        <div class="block">
-          <span class="block-label">SCREENSHOTS</span>
-          <h2>Screenshots</h2>
-          <div class="card-grid">
-            <div class="placeholder-img">[PLACEHOLDER: Image 1]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 2]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 3]</div>
-          </div>
+          <p>Since we were planning to run competitions multiple times per week, and since they would require intensive and lengthy gameplay sessions, I wanted to minimize player fatigue with engaging in the gameplay. Beyond just offering gameplay variety, the two modes also played to the strengths of different types of players. Time Rush requires lightning fast reflexes and object identification to maximize your score, but Spot the Difference is much more relaxed while having more challenging gameplay. Having new modes would also have the benefit of giving players that might care less about the competitive aspect or the rewards, but would be interested in a new way to play.</p>
+          <p>Time Rush was the game mode I mainly focused on. Since it was based on the Captain's Challenge from Pearl's Peril, we could use the same general balancing and difficulty progression. The main challenge here was understanding how the original game was balanced and any learnings the team had from it. Since Pearl's Peril wasn't data sheet driven the way June's Journey was, I also had to create a new sheet schema so we could emulate the configuration and balancing.</p>
+          <p>Spot the Difference was also based on another mobile game built around this single game mode. One challenge of this mode is that all scenes are widescreen, but since we split the screen in half and didn't want to have black bars along the top and bottom of the scene (and zooming out that far would leave objects difficult to see anyway), it's impossible to see the entirety of the scene at once. This mode absolutely requires the player to pan the scene around, and we reused the panning tutorial from the main game to remind the player to do so.</p>
+          <p>Scoring was primarily focused on encourage players to complete scenes, as later scenes would generate more points. Optimal play in the competitions would require reaching later scenes as soon as possible!</p>
+          <p>Energy costs for competitions were balanced primarily against the extra energy being injected by the Cafe, but I also wanted to give some room for additional energy to be spent by the most engaged and competitive players, which would require getting more energy from elsewhere (including purchasing from the store!).</p>
+          <p>In order to prevent prescanning scenes, we used a much blurrier scrim on the preparation screen.</p>
+          <p>Hints were originally free and usage would affect your final score, but after discussions with product, we decided to make hints purchasable through the Cafe.</p>
+          <p>Timing wise, since both game modes are timed, players could finish their scenes no matter how close to the end of the event that they started them. Finals standings would only be calculated after all matches were complete.</p>
         </div>
 
       </section>
