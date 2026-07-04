@@ -21,29 +21,29 @@
 
       <section class="container">
 
-        <div class="block">
-          <span class="block-label">OVERVIEW</span>
+        <div class="block">          
           <img src="/assets/images/junes-journey/features/seasonal-decorations.jpg" alt="Seasonal Decorations">
-          <p>[PLACEHOLDER: Initial overview text — what this feature is, where it
-             sits in the game, why it exists.]</p>
+          <p>Seasonal Decorations are month long events featuring unique decorations that are only available during that season. The grand prize centerpiece item and Star Box exclusive items are unique in each event. I was originally onboarded to setting up the configuration of the events, and then took responsibility to coordinate production of assets with the art team and implementing new seasons in the game. Eventually I took ownership of creating new balancing tools, working with data, formalizing the production process, and eventually onboarding, mentoring, and handing off the feature to new designers.</p>
         </div>
 
-        <div class="block">
-          <span class="block-label">FEATURE BREAKDOWN</span>
+        <div class="block">         
           <h2>Feature Breakdown</h2>
-          <p>[PLACEHOLDER: Detailed breakdown of your work on this feature — design
-             decisions, live ops process, data/KPI involvement, outcomes.]</p>
-        </div>
-
-        <div class="block">
-          <span class="block-label">SCREENSHOTS</span>
-          <h2>Screenshots</h2>
-          <div class="card-grid">
-            <div class="placeholder-img">[PLACEHOLDER: Image 1]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 2]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 3]</div>
-          </div>
-        </div>
+	<h4>Seasonal Evolution</h4>
+          <p>Seasonal decorations 1.0 were already designed by the time I joined the team. Originally, 1 of every item available had to be purchased in order to earn the new Centerpiece item. Before Dave Cross left the team, he also wrapped up the design of version 2.0. In this new updated version, each item had a certain value of seasonal specific "points", and earning the Centerpiece item required reaching a certain point threshold.</p>
+	<p>The reason for this change to 2.0 was based on a few factors. One was that we didn't have the art resources to create an entire set of brand new decorations each month. For the benefit of new players, we also wanted to rerelease decorations from previous events, but we didn't want to require older players to repurchase decorations they might not want to buy more of.</p>
+	<p>The point system allowed players to pick and choose which items they might want to repurchase, and reaching the Centerpiece goal however they wanted.</p>
+	<p>Not every item from a past year would reappear the following year, and we could take an item out of rotation to use as a sale or incentive in another feature.</p>
+	<p>For each rerelease, besides the Star Box and centerpiece items being unique, a few additional new decorations would be added to the rotations. Reasons for new items could be multifold. Sometimes we would observe a particular item not selling as well as similar decorations for other sets, so we might want to replace it with a decoration that could perform better. Sometimes a set would have more obvious gaps in how well players could set up fully realized scenes with everything currently available. Usually, the new items were to support the new Box/centerpiece items more, since a theme could drift over time. For example, a "State Fair" set one year might become a "Circus" set the next year.</p>
+	<h4>Seasonal Scheduling</h4>
+	<p>Seasons generally ran from the beginning of the month to the end of the month. Beyond just the environmental seasons, though, these events would also revolve around holidays, celebrations, or other events associated with a month. Months are also varying lengths, but we wanted to allow similar participation windows for all events. This all contributed to seasons not being as simple to set from the start to the end of a month.</p>
+	<p>Despite these small nuances, scheduling events was simply done through the data sheet config and could be done ahead of time as far out as you would want.</p>
+	<p>One notable change was removing the down time between seasonal events. There was no data based reason not to have a seasonal event always running. The original concern was to give players some breather time between events, but we saw no negative effects with having events run back-to-back.</p>
+	<h4>Seasons 2.0 Balancing</h4>
+	<p>With the 2.0 version of the feature, I now had freedom to balance the point value of decorations independently of progression vectors (the coin cost and flower value). Point values could also be changed to entirely different scales from one event to the next. That was a tactic I used early on, just to prevent players from developing expectations on what the balancing should be, as we wanted to experiment and try out different balancings.</p>
+	<p>Relative point values were still usually based on the "worth" of a decoration, progression wise, but I could also weight it based on more subjective measures, such as visual attractiveness of a decoration or how crossfunctional it would be across various decoration sets.</p>
+	<p>In order to facilitate all this balancing, I created a new data sheet structure that could serve as the balancing calculator per season, and also provide an overview of balancing across seasons. Values could then be carried over to the main data config document.</p>
+	<p>Once we had capacity to review seasonal performance, I worked more closely with our data team to monitor any effects each seasonal had on the economy and general season performance. This led to some increase in the overall points required to earn the centerpiece item.</p> 
+        </div>   
 
       </section>
     </main>
