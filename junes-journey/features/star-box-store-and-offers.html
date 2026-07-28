@@ -14,7 +14,7 @@
       <section class="page-hero">
         <div class="container">
           <span class="block-label">JUNE'S JOURNEY — FEATURE</span>
-          <h1>Star Box Store and Offers</h1>
+          <h1>Star Box Store</h1>
           <p><a href="/junes-journey/">← Back to June's Journey</a></p>
         </div>
       </section>
@@ -22,27 +22,26 @@
       <section class="container">
 
         <div class="block">
-          <span class="block-label">OVERVIEW</span>
           <img src="/assets/images/junes-journey/features/star-box-store-and-offers.jpg" alt="Star Box Store and Offers">
-          <p>[PLACEHOLDER: Initial overview text — what this feature is, where it
-             sits in the game, why it exists.]</p>
+          <p>The Star Box store allowed players to directly purchase 5-Star Boxes for the first time. 5-Star Boxes contail valuable upgrade resources, energy, and, most rarely, seasonal exclusive decorations.</p>
         </div>
 
         <div class="block">
-          <span class="block-label">FEATURE BREAKDOWN</span>
           <h2>Feature Breakdown</h2>
-          <p>[PLACEHOLDER: Detailed breakdown of your work on this feature — design
-             decisions, live ops process, data/KPI involvement, outcomes.]</p>
-        </div>
-
-        <div class="block">
-          <span class="block-label">SCREENSHOTS</span>
-          <h2>Screenshots</h2>
-          <div class="card-grid">
-            <div class="placeholder-img">[PLACEHOLDER: Image 1]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 2]</div>
-            <div class="placeholder-img">[PLACEHOLDER: Image 3]</div>
-          </div>
+	<h4>Development</h4>		
+          <p>The 5-Star Box storefront was one of the earliest features I worked on. Up to this point, the only way the player could earn 5-Star Boxes was by 5-Starring hidden object scenes. For early players, this made them particularly scarce, since we had a limited amount of content released, and players at the end of content would only be able to earn 5 per week.</p>
+	<p>Since 5-Star Boxes were the only source of exclusive seasonal set items (2 per season), they were highly desireable. Earning the exclusive decoration was random, though, so players could find themselves out of boxes and unable to earn the decorations before the season ended. We knew this would be a pain point for our players and a negative experience, so it was an early priority to give players a way to get more boxes.</p>
+	<h4>Economic Considerations</h4>
+	<p>5-Star Boxes contained crucial resources needed to advance in the game, with building upgrade resources, energy, and gold amounts standard apart from regular Star Boxes. Making the seasonal decorations rare (which did not provide much progression value), helped keep the boxes important for progression, while still providing an exciting chase incentive.</p>
+	<p>The boxes had built in support to prevent duplication of decorations already, as well. Once the player opened one decoration, it was guaranteed for the next decoration to be the other, uncollected one, next. The box also had a pity counter, so if the player opened a certain number of boxes without getting a decoration, they would eventually be guaranteed one.</p>
+	<p>This pity counter was an important part of considering price points for the boxes, along with the average expected value of the boxes contents and how many boxes would be required, at most, to be guaranteed to get both seasonal items. I also researched competitor games at the time, both for general price points and in how the value of those offers were costed. With the balancing we had, if the player relied on the pity counter, and they were consuming content as it was released, they would not have enough boxes to earn both seasonal decorations. The difference helped us set expectations on the ceiling for purchases, though value would serve as an incentive to purchase more boxes than they might immediately need.</p>
+	<p>Another key value of all Star Boxes is how they let the player control their session length. Besides the progression incentive of resources, or the chase for decorations, the energy from the boxes could also be used to extend your session.</p>
+	<p>Establishing a good anchor point with the cheapest price point was also important. Generally I worked from the point of setting price points, from the "cheapest" single Box purchase, to the highest $99 purchase, and then set the box count per purchase. Higher tier purchases had a built in discount per box purchased, and some slight massaging of the numbers to keep them nice and "round." I ended up with the 5 price points/amounts we have now.</p>
+	<h4>Visual Development and Flows</h4>
+	<p>I worked with our UI artist to make sure each price point had a distinct appearance and to have a visual progression in the prominance and intricacy of the offer. Access to the store was also provided by adding a new icon tab to the store and from the Star Box opening screen when you no longer had boxes to open. Price points were also coordinated with production to be set up as new SKUs on Google Play and iTunes.</p>
+	<h4>Results</h4>
+	<p>5-Star Boxes sold well and have remained available since. One KPI we were particularly keeping an eye on was which SKU was being purchased and returning purchasers. We did see many return purchasors and also more people purchasing the higher tier/value SKUs, rather than the cheapset anchor point option.</p>
+	
         </div>
 
       </section>
